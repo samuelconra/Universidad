@@ -1,0 +1,110 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<section id="contenedor-index">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Corpus_Christi_College_New_Court%2C_Cambridge%2C_UK_-_Diliff.jpg" alt="" style="width: 100%; opacity: 0.7; border-radius: 5px;">
+    <div id="elemento-index">
+        <h2 style="font-size: 2.5rem; margin: 0;">BIENVENIDO</h2>
+        <p style="font-weight: 200; margin: 0;">Universidad SHNAR</p>
+        <div class="row justify-content-between text-center">
+            <div class="col 6">
+                <a href="/Students/Index" class="btn-index">ALUMNOS</a>
+            </div>
+            <div class="col 6">
+                <a href="/Courses/Index" class="btn-index">MATERIAS</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="nuestrosCursos">
+    <h2>NUESTROS CURSOS</h2>
+
+    <div class="align-items-center text-center">
+        <div class="nav nav-pills me-3 text-center justify-content-center mt-4" id="v-pills-tab" role="tablist">
+            <button class="nav-link active btn-cursos" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">En Línea</button>
+            <button class="nav-link btn-cursos" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Presencial</button>
+            @* <button class="nav-link btn-cursos" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Nuevos</button> *@
+            @* <button class="nav-link btn-cursos" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button> *@
+        </div>
+        <br>
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                <div class="row justify-content-around">
+                    <div class="col-12 col-md-6 col-lg-4 p-5">
+                        <div class="tarjeta-curso">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                            <div class="contenido-tarjeta">
+                                <h5>Tecnología</h5>
+                                <p>
+                                    Descubre un mundo de posibilidades en nuestro apasionante curso de Tecnologías de Vanguardia. Este programa te brindará las habilidades y el entendimiento necesario para enfrentar los desafíos del mañana.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-5">
+                        <div class="tarjeta-curso">
+                            <img src="https://4bbdwp2p.media.zestyio.com/Careers-in-interior-design_1.jpg" alt="">
+                            <div class="contenido-tarjeta">
+                                <h5>Diseño</h5>
+                                <p>
+                                    Adéntrate en el emocionante mundo del diseño en nuestra universidad y descubre un viaje único hacia la expresión visual. Nuestro curso de Diseño está diseñado para aquellos apasionados por la estética, la innovación y la narrativa visual. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-5">
+                        <div class="tarjeta-curso">
+                            <img src="https://img.freepik.com/foto-gratis/oficinistas-que-usan-graficos-finanzas_23-2150408660.jpg" alt="">
+                            <div class="contenido-tarjeta">
+                                <h5>Finanzas</h5>
+                                <p>
+                                    Impartido por expertos en finanzas con una amplia experiencia en el sector, este programa te proporcionará una comprensión profunda de los mercados, análisis financiero y toma de decisiones estratégicas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                <div class="row justify-content-around">
+                    <div class="col-12 col-md-6 col-lg-4 p-5">
+                        <div class="tarjeta-curso">
+                            <img src="https://media.istockphoto.com/id/1219382595/vector/math-equations-written-on-a-blackboard.jpg?s=612x612&w=0&k=20&c=ShVWsMm2SNCNcIjuWGtpft0kYh5iokCzu0aHPC2fV4A=" alt="">
+                            <div class="contenido-tarjeta">
+                                <h5>Matemáticas</h5>
+                                <p>
+                                    Nuestro distinguido cuerpo docente, compuesto por apasionados matemáticos y académicos, te guiará a través de teorías complejas de manera accesible y motivadora. Descubrirás cómo las matemáticas son la base de la ciencia, la tecnología y la toma de decisiones estratégicas en diversos campos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-5">
+                        <div class="tarjeta-curso">
+                            <img src="https://www.linguahouse.com/linguafiles/md5/b8ec1cd0454c5017664198f8202cf268" alt="">
+                            <div class="contenido-tarjeta">
+                                <h5>Inglés</h5>
+                                <p>
+                                    Nuestro equipo de instructores altamente calificados te guiará a través de lecciones dinámicas que abarcan gramática, vocabulario, comprensión auditiva y expresión oral. Desde la comunicación cotidiana hasta la redacción académica, adquirirás las herramientas necesarias para comunicarte bien.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-5">
+                        <div class="tarjeta-curso">
+                            <img src="https://imageio.forbes.com/specials-images/dam/imageserve/966248982/960x0.jpg?height=456&width=711&fit=bounds" alt="">
+                            <div class="contenido-tarjeta">
+                                <h5>Machine Learning</h5>
+                                <p>
+                                    Nuestro distinguido cuerpo docente, compuesto por expertos líderes en la industria, te guiará a través de los fundamentos del Machine Learning, desde algoritmos básicos hasta técnicas avanzadas de aprendizaje profundo. Con un enfoque práctico y hands-on, tendrás la oportunidad de aplicar tus conocimientos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
